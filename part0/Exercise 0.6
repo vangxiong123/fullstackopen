@@ -1,1 +1,8 @@
+sequenceDiagram
+  participant browswer
+  participant server
 
+  browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
+  activate server
+  server-->>browser: the New Note
+  deactivate server
